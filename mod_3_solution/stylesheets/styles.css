@@ -1,1 +1,57 @@
+* {
+	box-sizing: border-box;
+}
 
+nav .navbar, .navbar-default {
+	border-radius:0;
+}
+
+body {
+  background: url(http://archive.azcentral.com/ent/calendar/imgs/photos/18274VEN.jpg) no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#menu-head {
+	background: rgba(0,0,0,.5);
+	margin-top:0;
+}
+
+.jumbotron {
+	position: relative;
+	top: 50px;
+	text-shadow: 0 2px 3px rgba(0,0,0,.4);
+	color:#fff;
+}
+
+.jumbotron h1 {
+	text-align:center;
+	color:#fff;
+}
+
+#menu-body{
+	position:relative;
+	top:50px;
+}
+
+#menu-body h3, p {
+	color:#fff;
+}
+
+#menu-body h3 {
+	text-align:center;
+	margin-bottom: 20px;
+}
+
+.menu-item {
+	margin:20px auto 0;
+	width:95%;
+	padding: 30px 50px 30px;
+	background: rgba(0,0,0,.5);
+}
+
+@media (min-width: 768px;) {
+	#topbar {
+		display:none;
+	}
+}
