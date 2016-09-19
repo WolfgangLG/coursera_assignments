@@ -26,7 +26,7 @@ var menuItemHtml = "snippets/menu-item.html";
 // Convenience function for inserting innerHTML for 'select'
 var insertHtml = function (selector, html) {
   var targetElem = document.querySelector(selector);
-  targetElem.innerHTML = html;
+  targetElem.innerHTML =html;
 };
 
 // Show loading icon inside element identified by 'selector'.
@@ -119,7 +119,7 @@ function buildAndShowHomeHTML (categories) {
       // 
       // var homeHtmlToInsertIntoMainPage = ....
       
-      insertHtml("main-content", homeHtmlToInsertIntoMainPage);
+      insertHtml("#main-content",homeHtmlToInsertIntoMainPage);
       // TODO: STEP 4: Insert the the produced HTML in STEP 3 into the main page
       // Use the existing insertHtml function for that purpose. Look through this code for an example
       // of how to do that. 
@@ -176,7 +176,7 @@ function buildAndShowCategoriesHTML (categories) {
             buildCategoriesViewHtml(categories, 
                                     categoriesTitleHtml,
                                     categoryHtml);
-          insertHtml("#main-content", categoriesViewHtml);
+          insertHtml("#main-content",categoriesViewHtml);
         },
         false);
     },
@@ -232,7 +232,7 @@ function buildAndShowMenuItemsHTML (categoryMenuItems) {
             buildMenuItemsViewHtml(categoryMenuItems, 
                                    menuItemsTitleHtml,
                                    menuItemHtml);
-          insertHtml("#main-content", menuItemsViewHtml);
+          insertHtml("#main-content",menuItemsViewHtml);
         },
         false);
     },
